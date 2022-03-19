@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29613.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Gestionnaire de tâche [Last]", "Gestionnaire de tâche [Last]\Gestionnaire de tâche [Last].csproj", "{7C4D2F85-5EBA-486B-9F2C-BCF631B3BCC6}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Gestionnaire de tâche", "Gestionnaire de tâche\Gestionnaire de tâche.vdproj", "{D7B1638A-4ABC-4B7D-8E6A-2145FB2F0CDB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7C4D2F85-5EBA-486B-9F2C-BCF631B3BCC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C4D2F85-5EBA-486B-9F2C-BCF631B3BCC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C4D2F85-5EBA-486B-9F2C-BCF631B3BCC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C4D2F85-5EBA-486B-9F2C-BCF631B3BCC6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7B1638A-4ABC-4B7D-8E6A-2145FB2F0CDB}.Debug|Any CPU.ActiveCfg = Debug
+		{D7B1638A-4ABC-4B7D-8E6A-2145FB2F0CDB}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B3EE2E52-646F-46F6-9737-67E35CD56E6D}
+	EndGlobalSection
+EndGlobal

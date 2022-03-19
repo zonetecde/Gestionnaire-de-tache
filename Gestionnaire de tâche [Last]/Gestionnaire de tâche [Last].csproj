@@ -1,0 +1,491 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7C4D2F85-5EBA-486B-9F2C-BCF631B3BCC6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Gestionnaire_de_tâche__Last_</RootNamespace>
+    <AssemblyName>Gestionnaire de tâche [Last]</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Main_Icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.52">
+      <HintPath>..\..\bunifu\Bunifu_UI_v1.52.dll</HintPath>
+    </Reference>
+    <Reference Include="ExcelLibrary, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\ExcelLibrary.1.2011.7.31\lib\ExcelLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.MSXML, Version=8.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Microsoft Visual Studio\Shared\Visual Studio Tools for Office\PIA\Office15\Microsoft.Office.Interop.Excel.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Runtime.Serialization.Primitives, Version=4.1.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.Serialization.Primitives.4.3.0\lib\net46\System.Runtime.Serialization.Primitives.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="XanderUI">
+      <HintPath>..\..\..\FRAMEWORK\XanderUiDemo-master\XanderUI.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Ajouter un mot clé.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ajouter un mot clé.Designer.cs">
+      <DependentUpon>Ajouter un mot clé.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ajouter un projet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ajouter un projet.Designer.cs">
+      <DependentUpon>Ajouter un projet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ajouter un sous projet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ajouter un sous projet.Designer.cs">
+      <DependentUpon>Ajouter un sous projet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ajouter un état.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ajouter un état.Designer.cs">
+      <DependentUpon>Ajouter un état.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ajouter une date d%27échéance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ajouter une date d%27échéance.Designer.cs">
+      <DependentUpon>Ajouter une date d%27échéance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ajouter une prioritée.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ajouter une prioritée.Designer.cs">
+      <DependentUpon>Ajouter une prioritée.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ajouter une tâche.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ajouter une tâche.Designer.cs">
+      <DependentUpon>Ajouter une tâche.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Log.cs" />
+    <Compile Include="EncryptionHelper.cs" />
+    <Compile Include="Etat.cs" />
+    <Compile Include="FirstLaunch.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FirstLaunch.Designer.cs">
+      <DependentUpon>FirstLaunch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Gestion des UserControls.cs" />
+    <Compile Include="Image view.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Image view.Designer.cs">
+      <DependentUpon>Image view.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListExtensions.cs" />
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Message.cs" />
+    <Compile Include="Modifier la progression.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modifier la progression.Designer.cs">
+      <DependentUpon>Modifier la progression.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ordre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ordre.Designer.cs">
+      <DependentUpon>Ordre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Paramètres.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Paramètres.Designer.cs">
+      <DependentUpon>Paramètres.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Priorité.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Project to Excel.cs" />
+    <Compile Include="Projet.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resource.cs" />
+    <Compile Include="Sous_Projet.cs" />
+    <Compile Include="Statistique nombre.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Statistique nombre.Designer.cs">
+      <DependentUpon>Statistique nombre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Statistiques.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Statistiques.Designer.cs">
+      <DependentUpon>Statistiques.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Statistiques_Graph.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Statistiques_Graph.Designer.cs">
+      <DependentUpon>Statistiques_Graph.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tchat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tchat.Designer.cs">
+      <DependentUpon>Tchat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Trie du projet importer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Trie du projet importer.Designer.cs">
+      <DependentUpon>Trie du projet importer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Tâche.cs" />
+    <Compile Include="Télécharger mise à jour.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Télécharger mise à jour.Designer.cs">
+      <DependentUpon>Télécharger mise à jour.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls-Priorité.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls-Priorité.Designer.cs">
+      <DependentUpon>UserControls-Priorité.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl_Haut du tableau.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl_Haut du tableau.Designer.cs">
+      <DependentUpon>UserControl_Haut du tableau.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl_Image.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl_Image.Designer.cs">
+      <DependentUpon>UserControl_Image.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl_Message.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl_Message.Designer.cs">
+      <DependentUpon>UserControl_Message.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl_Projet.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl_Projet.Designer.cs">
+      <DependentUpon>UserControl_Projet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl_Projet_Vue.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl_Projet_Vue.Designer.cs">
+      <DependentUpon>UserControl_Projet_Vue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl_Sous Projet.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl_Sous Projet.Designer.cs">
+      <DependentUpon>UserControl_Sous Projet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl_state.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl_state.Designer.cs">
+      <DependentUpon>UserControl_state.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl_Statistic_etat_chiffre.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl_Statistic_etat_chiffre.Designer.cs">
+      <DependentUpon>UserControl_Statistic_etat_chiffre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl_Statistic_priorité_chiffre.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl_Statistic_priorité_chiffre.Designer.cs">
+      <DependentUpon>UserControl_Statistic_priorité_chiffre.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl_Séléctionner couleur texte.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl_Séléctionner couleur texte.Designer.cs">
+      <DependentUpon>UserControl_Séléctionner couleur texte.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl_Tâche.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl_Tâche.Designer.cs">
+      <DependentUpon>UserControl_Tâche.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utilities.cs" />
+    <EmbeddedResource Include="Ajouter un mot clé.resx">
+      <DependentUpon>Ajouter un mot clé.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ajouter un projet.resx">
+      <DependentUpon>Ajouter un projet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ajouter un sous projet.resx">
+      <DependentUpon>Ajouter un sous projet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ajouter un état.resx">
+      <DependentUpon>Ajouter un état.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ajouter une date d%27échéance.resx">
+      <DependentUpon>Ajouter une date d%27échéance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ajouter une prioritée.resx">
+      <DependentUpon>Ajouter une prioritée.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ajouter une tâche.resx">
+      <DependentUpon>Ajouter une tâche.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FirstLaunch.resx">
+      <DependentUpon>FirstLaunch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Image view.resx">
+      <DependentUpon>Image view.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modifier la progression.resx">
+      <DependentUpon>Modifier la progression.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ordre.resx">
+      <DependentUpon>Ordre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Paramètres.resx">
+      <DependentUpon>Paramètres.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Statistique nombre.resx">
+      <DependentUpon>Statistique nombre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistiques.resx">
+      <DependentUpon>Statistiques.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Statistiques_Graph.resx">
+      <DependentUpon>Statistiques_Graph.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tchat.resx">
+      <DependentUpon>Tchat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Trie du projet importer.resx">
+      <DependentUpon>Trie du projet importer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Télécharger mise à jour.resx">
+      <DependentUpon>Télécharger mise à jour.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls-Priorité.resx">
+      <DependentUpon>UserControls-Priorité.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_Haut du tableau.resx">
+      <DependentUpon>UserControl_Haut du tableau.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_Image.resx">
+      <DependentUpon>UserControl_Image.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_Message.resx">
+      <DependentUpon>UserControl_Message.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_Projet.resx">
+      <DependentUpon>UserControl_Projet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_Projet_Vue.resx">
+      <DependentUpon>UserControl_Projet_Vue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_Sous Projet.resx">
+      <DependentUpon>UserControl_Sous Projet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_state.resx">
+      <DependentUpon>UserControl_state.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_Statistic_etat_chiffre.resx">
+      <DependentUpon>UserControl_Statistic_etat_chiffre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_Statistic_priorité_chiffre.resx">
+      <DependentUpon>UserControl_Statistic_priorité_chiffre.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_Séléctionner couleur texte.resx">
+      <DependentUpon>UserControl_Séléctionner couleur texte.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl_Tâche.resx">
+      <DependentUpon>UserControl_Tâche.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.manifest" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Main_Icon.ico" />
+    <None Include="Resources\copy1.png" />
+    <None Include="Resources\paste1.png" />
+    <None Include="Resources\paste.png" />
+    <None Include="Resources\copy.png" />
+    <None Include="Resources\background.jpg" />
+    <None Include="Resources\icons8_settings_1.ico" />
+    <None Include="Resources\setting1.png" />
+    <None Include="Resources\import.png" />
+    <None Include="Resources\exporter.png" />
+    <None Include="Resources\up.png" />
+    <None Include="Resources\down.png" />
+    <None Include="Resources\icon_ordre.ico" />
+    <None Include="Resources\icons8_alphabetical_sorting_96px.png" />
+    <None Include="Resources\arrow.png" />
+    <None Include="Resources\progress.ico" />
+    <None Include="Resources\more.png" />
+    <None Include="Resources\tchat counter.png" />
+    <None Include="Resources\note.png" />
+    <None Include="Resources\sablier.png" />
+    <None Include="Resources\loading.gif" />
+    <None Include="Resources\duplicate.png" />
+    <None Include="Resources\icons8_duplicate_100px.png" />
+    <None Include="Resources\play.png" />
+    <None Include="Resources\play.jpg" />
+    <None Include="Resources\exe_def.jpg" />
+    <None Include="Resources\VS.png" />
+    <None Include="Resources\Chiffres-et-formes-20273.png" />
+    <None Include="Resources\5_icon-icons.com_68890.png" />
+    <None Include="Resources\chiffre_icon.jpg" />
+    <None Include="Resources\graphique_icon.png" />
+    <None Include="Resources\icons8_statistics.ico" />
+    <None Include="Resources\icons8-statistiques-80.png" />
+    <None Include="Resources\statistic.png" />
+    <None Include="Resources\chevron-right.png" />
+    <None Include="Resources\chevron-left.png" />
+    <None Include="Resources\underline 2.png" />
+    <None Include="Resources\underline.png" />
+    <None Include="Resources\italic.png" />
+    <None Include="Resources\color.png" />
+    <None Include="Resources\bold.png" />
+    <None Include="Resources\tchat.ico" />
+    <None Include="Resources\tchat.png" />
+    <None Include="Resources\contact.png" />
+    <None Include="Resources\view more.png" />
+    <None Include="Resources\view down.png" />
+    <None Include="Resources\modify.png" />
+    <None Include="Resources\delete_trash.png" />
+    <None Include="Resources\trash.png" />
+    <None Include="Resources\delete.png" />
+    <None Include="Resources\add2.png" />
+    <None Include="Resources\add.png" />
+    <None Include="Resources\Ajouter_un_projet_icon.ico" />
+    <None Include="Resources\minimize.png" />
+    <None Include="Resources\exit.png" />
+    <None Include="Resources\Main_Icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
