@@ -1,6 +1,8 @@
 # Gestionnaire-de-tache
 Un gestionnaire de tâche pour vous aider dans vos projets.
 
+Ceci est mon premier 'grand' logiciel, du moins sa version 2 (la première était.. différente). Je l'ai commencé en janvier 2020.
+
 La moitié du code source du logiciel a été perdu. Il est actuellement à la v1.1.11, mais le fichier release est à la dernière version 1.2.3.
 
 Historique des mises à jour : https://docs.google.com/document/d/1qZZRPoEkC8aJdkggGT6nk_-JnCsYlOx4x6sX0FGdDTg
